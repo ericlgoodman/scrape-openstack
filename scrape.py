@@ -25,7 +25,11 @@ def views_to_int(views):
         return 0
 
 
-def get_all(dic):
+def get_all():
+
+    # Url -> Int dictionary
+    dic = {}
+
     for i in xrange(1, 797):
 
         # Scrape the whole page
@@ -75,5 +79,4 @@ def get_all(dic):
 
 
 if __name__ == '__main__':
-    dic = {}
-    get_all(dic)
+    get_all()
